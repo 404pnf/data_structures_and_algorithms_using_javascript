@@ -16,7 +16,7 @@ function CArray(numElements) {
 function setData() {
    for (var i = 0; i < this.numElements; ++i) {
       this.dataStore[i] = Math.floor(Math.random() * 
-                          (this.numElements+1));
+                          this.numElements) + 1;
    }
 }
 
